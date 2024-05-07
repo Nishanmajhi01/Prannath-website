@@ -1,0 +1,113 @@
+
+header > span {
+    font-size: 3em;
+    font-weight: bold;
+}
+nav{
+width:85%;
+text-align: center;
+margin: auto;
+
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 5px;
+}
+
+nav ul li {
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin: 8px;
+    padding: 4px;
+}
+
+a{
+    display: inline-block;
+  position: relative;
+  text-shadow: 5px 5px 10px rgba(129, 123, 123, 0.5);
+
+}
+
+a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 3px;
+    background-color: rgb(61, 61, 64); /* Change color as needed */
+    transition: width 0.2s ease; /* Add transition effect */
+    
+  }
+
+  a:hover::after {
+    width: 100%;
+    
+
+  }
+section{
+    text-align: center;
+    margin: auto;
+}
+
+  article {
+   display: flex;
+   align-items: center;
+    justify-content: space-evenly;
+  }
+
+  article h1 {
+    font-size: 6em;
+    /* animation : bounce 2s infinite alternate; */
+  }
+   /* @keyframes bounce {
+    0%{
+        transform: translate(0);
+    }
+    100% {
+        transform: translatey(-20px);
+    
+        }
+   } */
+
+   
+
+  article > img {
+    margin: 30px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    height: 70vh;
+    background-position: center;
+    background-size: cover;
+
+  }
+
+ .btn {
+  background-color: black;
+  color: white;
+  padding: 7px;
+  height: 2.5rem;
+  width: 8rem;
+  font-size: 1.5rem;
+  border: 2px solid black;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  transition: height 0.5s ease;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+article .btn:hover{
+  transform: scale(1.1);
+}
+ article .left{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+ }
+
